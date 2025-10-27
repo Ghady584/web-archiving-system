@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables (NEVER upload these!)
+.env
+.env.local
+.env.production
+
+# Build outputs
+frontend/build/
+dist/
+
+# Uploaded files (too large)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MongoDB local
+data/
