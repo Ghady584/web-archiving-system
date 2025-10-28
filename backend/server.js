@@ -65,4 +65,10 @@ process.on('unhandledRejection', (err) => {
   server.close(() => process.exit(1));
 });
 
+// Update CORS to allow all origins (for now)
+app.use(cors({
+  origin: '*', // We'll change this later
+  credentials: true
+}));
+
 module.exports = app;
