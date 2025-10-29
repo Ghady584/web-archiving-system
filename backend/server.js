@@ -23,6 +23,11 @@ app.use(cors({
   credentials: true
 }));
 
+app.use(cors({
+  origin: true,
+  credentials: true
+}));
+
 // Serve static files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
